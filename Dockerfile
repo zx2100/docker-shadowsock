@@ -27,8 +27,8 @@ RUN \
     
 
 #CMD villsock -conf /data/config.json
-ENTRYPOINT ["/bin/docker-entrypoint.sh"]
-
+ENTRYPOINT ["docker-entrypoint.sh"]
+EXPOSE ${SOCK_PORT:-10018}
 #ENTRYPOINT 必须在CMD前面
 CMD ["villsock", "-conf", "/etc/villsock/config.json"]
 
