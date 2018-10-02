@@ -2,7 +2,7 @@
 #
 #定义配置文件
 
-mkdir -pv  /etc/villsock 
+mkdir -pv  /etc/villsock > /dev/null
 cat > /etc/villsock/config.json << EOF
 {
     "time_out":20,
